@@ -10,25 +10,10 @@
  * more about security risks here:
  *
  * https://electronjs.org/docs/tutorial/security
- *
- * To enable Node.js integration in this file, open up `main.js` and enable the `nodeIntegration`
- * flag:
- *
- * ```
- *  // Create the browser window.
- *  mainWindow = new BrowserWindow({
- *    width: 800,
- *    height: 600,
- *    webPreferences: {
- *      nodeIntegration: true
- *    }
- *  });
- * ```
  */
 
+// include neccesary modules
 import './index.css';
 
-console.log('👋 This message is being logged by "renderer.js", included via webpack');
-
-// Add this to the end of the existing file
+// import the main react component/app
 import './App';
