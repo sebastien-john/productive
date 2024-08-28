@@ -1,7 +1,9 @@
 import { app, BrowserWindow } from 'electron';
+const path = require('node:path')
 
 class Main {
   mainWindow: BrowserWindow | null = null;
+
 
   init() {
     app.on('ready', this.createWindow);
@@ -13,6 +15,7 @@ class Main {
       width: 800,
       height: 600,
       webPreferences: {
+        preload: path.join(__dirname, 'preload.js'),
         nodeIntegration: true
       }
     });

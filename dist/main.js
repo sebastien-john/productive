@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var electron_1 = require("electron");
+var path = require('node:path');
 var Main = /** @class */ (function () {
     function Main() {
         var _this = this;
@@ -10,6 +11,7 @@ var Main = /** @class */ (function () {
                 width: 800,
                 height: 600,
                 webPreferences: {
+                    preload: path.join(__dirname, 'preload.js'),
                     nodeIntegration: true
                 }
             });
