@@ -12,6 +12,11 @@
     "outDir": "dist",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "noEmitOnError": true,
+    "removeComments": true,
     "paths": {
       "*": ["node_modules/*"]
     }
