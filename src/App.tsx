@@ -1,4 +1,9 @@
-import { createRoot } from 'react-dom/client';
+import { createRoot } from "react-dom/client";
+import Clock from "./clock";
 
 const root = createRoot(document.body);
-root.render(<h2>Hello from React!</h2>);
+root.render(
+  <div>
+    <Clock />
+  </div>
+);
