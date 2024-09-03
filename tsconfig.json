@@ -17,7 +17,6 @@
     "strict": true,
     "noEmitOnError": true,
     "removeComments": true,
-    "noUnusedLocals": true,
     "strictNullChecks": true,
     "paths": {
       "*": ["node_modules/*"]
