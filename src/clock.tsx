@@ -16,8 +16,11 @@ function Clock() {
   useEffect(() => {
     let intervalId: string | number | NodeJS.Timeout | undefined;
     if (timerOn) {
-      console.log(minutesRemaining);
       intervalId = setInterval(() => setMinutesRemaining(minutesRemaining - 1), 1000);
+      if (minutesRemaining <= 0) {
+        alert("do sum");
+        setTimerOn(false);
+      }
     }
     return () => clearInterval(intervalId);
   }, [timerOn, minutesRemaining]);
